@@ -127,7 +127,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-API_URL = 'https://jsonplaceholder.typicode.com/posts'
+API_URL = 'https://pezaaa.pythonanywhere.com/landing/api/'
 
 CSRF_TRUSTED_ORIGINS = [
   "https://*.app.github.dev",
