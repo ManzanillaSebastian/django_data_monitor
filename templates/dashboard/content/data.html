@@ -123,6 +123,7 @@
                 <th class="px-4 py-3">Nombre</th>
                 <th class="px-4 py-3">Correo</th>
                 <th class="px-4 py-3">Mensaje</th>
+                <th class="px-4 py-3">Categoría</th>
 
               </tr>
             </thead>
@@ -142,6 +143,10 @@
 
                   <td class="px-4 py-3 text-sm">
                     {{ post.message|default:"(Sin mensaje)" }}
+                  </td>
+
+                  <td class="px-4 py-3 text-sm">
+                    {{ post.category|default:"(Sin categoría)" }}
                   </td>
 
                 </tr>
