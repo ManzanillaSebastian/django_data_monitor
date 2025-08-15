@@ -12,7 +12,7 @@ def index(request):
     posts = []
     for key, value in raw_data.items():
         item = value.copy()
-        item["id"] = key  # opcional si quieres mostrar el ID
+
         posts.append(item)
 
     total_responses = len(posts)
@@ -24,9 +24,13 @@ def index(request):
 
     data = {
         'title': "Landing Page' Dashboard",
+        'posts': posts,
+
         'total_responses': total_responses,
         'first_name': first_name,
-        'posts': posts,
+        'latest_name': latest_name,     
+        'unique_emails': unique_emails,
+
     }
 
     return render(request, 'dashboard/index.html', data)

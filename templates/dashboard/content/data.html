@@ -11,7 +11,7 @@
     <!-- Indicadores -->
     <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
 
-      <!-- Indicador -->
+      <!-- Indicador Total de Respuestas -->
       <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
         <div class="p-3 mr-4 text-orange-500 bg-orange-100 rounded-full dark:text-orange-100 dark:bg-orange-500">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <!-- Indicador -->
+      <!-- Indicador Primer Nombre -->
       <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
         <div class="p-3 mr-4 text-green-500 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-500">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -49,7 +49,7 @@
 
             <!-- START - valor del indicador 2 -->
           <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
-            {{ first_name|upper }}
+            {{ first_name }}
           </p>
             <!-- END - valor del indicador 2 -->
 
@@ -57,32 +57,7 @@
         </div>
       </div>
 
-      <!-- Indicador -->
-      <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-        <div class="p-3 mr-4 text-blue-500 bg-blue-100 rounded-full dark:text-blue-100 dark:bg-blue-500">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path
-              d="M 10 1.667969 C 14.601562 1.667969 18.332031 5.398438 18.332031 10 C 18.332031 14.601562 14.601562 18.332031 10 18.332031 C 5.398438 18.332031 1.667969 14.601562 1.667969 10 C 1.667969 5.398438 5.398438 1.667969 10 1.667969 Z M 10 3.332031 C 6.316406 3.332031 3.332031 6.316406 3.332031 10 C 3.332031 13.683594 6.316406 16.667969 10 16.667969 C 13.683594 16.667969 16.667969 13.683594 16.667969 10 C 16.667969 6.316406 13.683594 3.332031 10 3.332031 Z M 10 5 C 10.425781 5 10.78125 5.320312 10.828125 5.734375 L 10.832031 5.832031 L 10.832031 9.65625 L 12.257812 11.078125 C 12.582031 11.402344 12.582031 11.929688 12.257812 12.257812 C 11.957031 12.554688 11.484375 12.578125 11.15625 12.324219 L 11.078125 12.257812 L 9.410156 10.589844 C 9.28125 10.460938 9.199219 10.289062 9.175781 10.109375 L 9.167969 10 L 9.167969 5.832031 C 9.167969 5.375 9.539062 5 10 5 Z M 10 5">
-            </path>
-          </svg>
-        </div>
-        <div>
-          <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-            Contactos
-          </p>
-          <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
-
-            <!-- START - valor del indicador 3 -->
-            <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
-              {{ unique_emails }} correos únicos
-            </p>
-            <!-- END - valor del indicador 3 -->
-
-          </p>
-        </div>
-      </div>
-
-      <!-- Indicador -->
+      <!-- Indicador Ultimo nombre-->
       <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
         <div class="p-3 mr-4 text-teal-500 bg-teal-100 rounded-full dark:text-teal-100 dark:bg-teal-500">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -107,6 +82,31 @@
         </div>
       </div>
 
+      <!-- Indicador Correos Unicos -->
+      <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+        <div class="p-3 mr-4 text-blue-500 bg-blue-100 rounded-full dark:text-blue-100 dark:bg-blue-500">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M 10 1.667969 C 14.601562 1.667969 18.332031 5.398438 18.332031 10 C 18.332031 14.601562 14.601562 18.332031 10 18.332031 C 5.398438 18.332031 1.667969 14.601562 1.667969 10 C 1.667969 5.398438 5.398438 1.667969 10 1.667969 Z M 10 3.332031 C 6.316406 3.332031 3.332031 6.316406 3.332031 10 C 3.332031 13.683594 6.316406 16.667969 10 16.667969 C 13.683594 16.667969 16.667969 13.683594 16.667969 10 C 16.667969 6.316406 13.683594 3.332031 10 3.332031 Z M 10 5 C 10.425781 5 10.78125 5.320312 10.828125 5.734375 L 10.832031 5.832031 L 10.832031 9.65625 L 12.257812 11.078125 C 12.582031 11.402344 12.582031 11.929688 12.257812 12.257812 C 11.957031 12.554688 11.484375 12.578125 11.15625 12.324219 L 11.078125 12.257812 L 9.410156 10.589844 C 9.28125 10.460938 9.199219 10.289062 9.175781 10.109375 L 9.167969 10 L 9.167969 5.832031 C 9.167969 5.375 9.539062 5 10 5 Z M 10 5">
+            </path>
+          </svg>
+        </div>
+        <div>
+          <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
+            Contactos
+          </p>
+          <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
+
+            <!-- START - valor del indicador 3 -->
+            <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
+              {{ unique_emails }} correos únicos
+            </p>
+            <!-- END - valor del indicador 3 -->
+
+          </p>
+        </div>
+      </div>      
+
     </div>
 
     <div class="grid gap-6 mb-8 md:grid-cols-2">
@@ -118,21 +118,34 @@
           <table class="w-full whitespace-no-wrap">
             <thead>
               <tr
-                class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                class="text-xs font-semibold tracking-wide text-left text-gray-700 bg-purple-300 dark:text-gray-300 dark:bg-purple-900 uppercase border-b dark:border-gray-700">
+                
                 <th class="px-4 py-3">Nombre</th>
                 <th class="px-4 py-3">Correo</th>
+                <th class="px-4 py-3">Mensaje</th>
+
               </tr>
             </thead>
+
             <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
+              
               {% for post in posts %}
-                <tr class="text-gray-700 dark:text-gray-400 {% cycle 'bg-gray-50' 'bg-white' %}">
+                <tr class="text-gray-600 dark:text-gray-400 {% cycle 'bg-gray-100' 'bg-white' %} dark:{% cycle 'bg-gray-700' 'bg-gray-900' %}">
+
                   <td class="px-4 py-3 text-sm">
                     {{ post.name|default:"(Sin nombre)"|title }}
                   </td>
+
                   <td class="px-4 py-3 text-sm">
                     {{ post.email|default:"(Sin correo)"|lower }}
                   </td>
+
+                  <td class="px-4 py-3 text-sm">
+                    {{ post.message|default:"(Sin mensaje)" }}
+                  </td>
+
                 </tr>
+
               {% empty %}
                 <tr>
                   <td colspan="2" class="px-4 py-3 text-sm text-center text-gray-500">
@@ -144,6 +157,7 @@
 
           </table>
         </div>
+
         <div class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
           <span class="flex items-center col-span-3">
             <!-- START - # total de respuestas -->
@@ -162,7 +176,7 @@
           <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
             Título del gráfico
           </h4>
-          <canvas id="line"></canvas>
+          <canvas id="bars"></canvas>
         </div>
       </div>
       <!-- END - Gráficos -->
